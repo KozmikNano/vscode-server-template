@@ -1,4 +1,4 @@
-# Small Template
+# Slim Template
 This version will only install the basic packages: ```sudo bash wget locales```
 
 *Do to limitations of the `code tunnel` limitations alpine wasn't integrated. Ubuntu is still used as the base image.*
