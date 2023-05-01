@@ -16,7 +16,8 @@ coder template create
 ## Notes
 - This *should* work on any cpu arch.
 - This template uses `ubuntu:latest` Docker
-- NVM will be installed, alongside the latest node version
+- NVM will be installed, alongside the latest node version, npm, yarn, and pnpm
+- If in any case you are prompted for a password in the cli, you can use `password`
 
 ### Verified that it can run on arm based operating systems!
 - I made/tested this on a Raspberry Pi 4B 8GB (ARM64 Raspberry Pi OS)

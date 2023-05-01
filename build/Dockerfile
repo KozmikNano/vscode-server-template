@@ -9,9 +9,8 @@ RUN apt install -y \
 
 RUN localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 
-RUN useradd coder --create-home --shell=/bin/bash --uid=1000 --user-group && \
-    echo "coder ALL=(ALL) NOPASSWD:ALL" >>/etc/sudoers.d/nopasswd         && \
-    echo "permit nopass coder as root" >> /etc/doas.conf
+RUN useradd coder --create-home --shell=/bin/bash --uid=1000 --user-group -p "$(openssl passwd -1 password)" && \
+    echo "coder ALL=(ALL) NOPASSWD:ALL" >>/etc/sudoers.d/nopasswd
 
 USER 1000
 WORKDIR /home/coder
@@ -21,7 +20,7 @@ RUN export NVM_DIR="$HOME/.nvm" && \
     [ -s "$NVM_DIR/nvm.sh" ]    && \
     . "$NVM_DIR/nvm.sh"         && \
     nvm install node            && \
-    npm i -g pnpm npm
+    npm i -g pnpm npm yarn
 
 
 ENV LANG="en_US.UTF-8"
