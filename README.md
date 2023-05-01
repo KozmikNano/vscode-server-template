@@ -14,10 +14,8 @@ coder template create
 ```
 
 ## Notes
-- This should work on any cpu arch.
-- This template is on top of ubuntu (The latest)
-- This template will install zsh using a tool from [this repo](https://github.com/deluan/zsh-in-docker)
-    - Look at the dockerfile for more info
+- This *should* work on any cpu arch.
+- This template uses `ubuntu:latest` Docker
 - NVM will be installed, alongside the latest node version
 
 ### Verified that it can run on arm based operating systems!
