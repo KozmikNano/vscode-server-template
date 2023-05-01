@@ -13,10 +13,10 @@ cd vscode-server-template
 coder template create
 ```
 
-I have made some branches with other forms of this template, such as slim; a completly bare bones environmnet with only the basic packages needed to run vscode-server.
+- I have made some branches with other forms of this template, such as slim; a completly bare bones environmnet with only the basic packages needed to run vscode-server.
     - You can view the list [here](https://github.com/KozmikNano/vscode-server-template/branches/all)
     - By clicking on one of the branches you can view more information about it.
-    
+
 ## Notes
 - This *should* work on any cpu arch.
 - This template uses `ubuntu:latest` Docker
