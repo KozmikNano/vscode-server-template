@@ -13,6 +13,8 @@ cd vscode-server-template
 coder template create
 ```
 
+- The web client of vscode is on a subdomain rather than the traditional `/apps/code-server` Check out the terraform configuration for more info!
+
 - I have made some branches with other forms of this template, such as slim; a completly bare bones environmnet with only the basic packages needed to run vscode-server.
     - You can view the list [here](https://github.com/KozmikNano/vscode-server-template/branches/all)
     - By clicking on one of the branches you can view more information about it.
