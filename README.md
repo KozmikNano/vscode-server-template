@@ -1,1 +1,1 @@
-# vscode-server-template
+# successfully hijacked
